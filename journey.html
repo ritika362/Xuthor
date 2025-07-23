@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Journey | Xuthor Tech</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #0b0d13;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .journey-header {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+
+    .journey-header h1 {
+      font-size: 2.5rem;
+      color: #00bfff;
+    }
+
+    .journey-header p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 1rem auto;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #00bfff;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    .timeline-item {
+      padding: 1.5rem 2rem;
+      position: relative;
+      width: 50%;
+    }
+
+    .timeline-item .content {
+      background-color: #11131b;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 5px solid #00bfff;
+    }
+
+    .timeline-item.left {
+      left: 0;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      width: 20px;
+      height: 20px;
+      background-color: #00bfff;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item.left::before {
+      right: -10px;
+    }
+
+    .timeline-item.right::before {
+      left: -10px;
+    }
+
+    .timeline-item h3 {
+      margin-top: 0;
+      color: #00d5ff;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid #00bfff;
+      color: #00bfff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #00bfff;
+      color: #000;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 8px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 25px;
+      }
+
+      .timeline-item.right {
+        left: 0%;
+      }
+
+      .timeline-item.left::before,
+      .timeline-item.right::before {
+        left: 0px;
+      }
+
+      .timeline-item .content {
+        border-left: 5px solid #00bfff;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="journey-header">
+    <h1>Our Journey</h1>
+    <p>From our humble beginnings as a newbie startup in Pollen Propel 1.0, we’ve grown steadily with resilience and passion.</p>
+  </section>
+
+  <div class="timeline">
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Started at Pollen Propel 1.0</h3>
+        <p>We began our startup journey at Pollen Propel 1.0, brimming with ideas and energy.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="content">
+        <h3>Reached Top 3</h3>
+        <p>Recognized as one of the Top 3 teams in the competition—proof of our team’s effort and determination.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Industry Appreciation</h3>
+        <p>We received encouraging feedback from industry experts, inspiring us to refine our vision further.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="content">
+        <h3>Selected for Cohort 4.0</h3>
+        <p>A major milestone! We were selected to join the prestigious Pollen Propel Cohort 4.0.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cta">
+    <p>Join us as we continue our journey—follow our story at Xuthor.</p>
+    <a href="homepage.html">Back to Home</a>
+  </div>
+
+</body>
+</html>
